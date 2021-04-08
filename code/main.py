@@ -32,5 +32,5 @@ for submission in reddit.subreddit("DataHoarder").hot(limit=25):
     pdf.multi_cell(w = 0, h = 5, txt = str(summary), border = 0, align = 'L', fill = False)
     pdf.set_font("Arial", size = 10)
     pdf.multi_cell(w = 0, h = 5, txt = str(selftext), border = 0, align = 'L', fill = False)
-    pdf.output("data/%s.pdf" % submission) 
+    pdf.output("data/{}.pdf".format(submission)) 
     
