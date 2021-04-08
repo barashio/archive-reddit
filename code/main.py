@@ -28,7 +28,7 @@ for submission in reddit.subreddit("DataHoarder").hot(limit=25):
     pdf.add_page()
     pdf.set_font("Arial", 'B', size = 13)
     pdf.multi_cell(w = 0, h = 5, txt = str(title), border = 0, align = 'L', fill = False)
-    pdf.set_font("Arial", 'I', size = 9)
+    pdf.set_font("Arial", size = 9)
     pdf.multi_cell(w = 0, h = 5, txt = str(summary), border = 0, align = 'L', fill = False)
     pdf.set_font("Arial", size = 10)
     pdf.multi_cell(w = 0, h = 5, txt = str(selftext), border = 0, align = 'L', fill = False)
